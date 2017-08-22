@@ -1,9 +1,20 @@
 var MongoClient = require('mongodb').MongoClient;
+var io = require('socket.io').listen(4000);
 
-//Connection URL
-MongoClient.connect('mongodb://localhost:27017/simpledata', (err, db) => {
-	//if(err) throw err;
+
+//Connect to mongoDB
+MongoClient.connect('mongodb://localhost:27017/simpleData', (err, db) => {
 	
-	db.close();
+	/* FIND WAY TO CONNECT TO SOCKET.IO
+	//Connect to socket.io
+	io.on('connection', () => {
+		console.log('socket.io works');
+	});
 	
+	*/
+	
+	console.log('hello');
+		
 });
+
+
