@@ -1,5 +1,5 @@
 {
-  "name": "simple-app",
+  "name": "mycode-simple-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,18 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/code-miguel/simple-app.git"
-  },
-  "author": "Miguel Gomez",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/code-miguel/simple-app/issues"
-  },
-  "homepage": "https://github.com/code-miguel/simple-app#readme",
   "dependencies": {
-    "mongodb": "^2.2.31",
+    "express": "^4.15.4",
     "socket.io": "^2.0.3"
   }
 }

@@ -1,0 +1,15 @@
+#message-board {
+	width: 200px;
+	height: 200px;
+	border-style: solid;
+}
+
+#name{
+	width: 200px;
+	height: 20px;
+}
+
+#submit-button{
+	width: 50px;
+	height: 20px;
+}
