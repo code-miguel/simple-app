@@ -1,10 +1,11 @@
 var express = require('express');
 var socket = require('socket.io');
+var MongoClient = require('mongodb').MongoClient;
 
 var app = express();
 var server = app.listen(4000);
 
-//serve static files to express
+//Serving static files in Express
 app.use(express.static('client'));
 
 //set up socket on server side
@@ -24,3 +25,14 @@ io.on('connection', (socket) => {
 	
 		 
 });
+
+MongoClient.connect('mongodb://127.0.0.1/test', (err, db) => {
+	if (err) {
+		throw err;
+	} 	
+	console.log('it is working');
+});
+
+
+
+
